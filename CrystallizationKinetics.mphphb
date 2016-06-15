@@ -216,6 +216,20 @@
                       <feature xsi:type="com.comsol.mph-v15:ReportFeatureList" model="/0"/>
                     </value>
                   </features>
+                  <features key="img1">
+                    <value xsi:type="com.comsol.mph-v15:ReportFeature" tag="img1" entityName="Image 1" entityComments="" entityAuthor="" entityCreationTime="1465983785691" operationID="DocImage">
+                      <properties key="source">
+                        <value tag="source" value="external"/>
+                      </properties>
+                      <properties key="externalfile">
+                        <value tag="externalfile" value="/Users/tutur/Documents/Crystallisation Kinetics Comsol Physics/G_function.png"/>
+                      </properties>
+                      <properties key="caption">
+                        <value tag="caption" value="Nakamura function regularization"/>
+                      </properties>
+                      <feature xsi:type="com.comsol.mph-v15:ReportFeatureList" model="/0"/>
+                    </value>
+                  </features>
                 </feature>
               </value>
             </features>
@@ -615,7 +629,7 @@
               </value>
             </features>
             <features key="domfeat2">
-              <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="domfeat2" entityName="crystallisation" entityComments="" entityAuthor="" entityCreationTime="1366629543221" entityModifyTime="1465475448476" entityModifiedBy="" operationID="PhysicsDomainFeature">
+              <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="domfeat2" entityName="crystallisation" entityComments="" entityAuthor="" entityCreationTime="1366629543221" entityModifyTime="1465983755429" entityModifiedBy="" operationID="PhysicsDomainFeature">
                 <properties key="type">
                   <value tag="type" value="CrystallisationKinetics"/>
                 </properties>
@@ -623,7 +637,7 @@
                   <value tag="shortName" value="ck"/>
                 </properties>
                 <properties key="description">
-                  <value tag="description" value="Crystallisation Kinetics"/>
+                  <value tag="description" value="Nakamura Kinetics"/>
                 </properties>
                 <properties key="descriptionLocalized">
                   <value tag="descriptionLocalized" value=""/>
@@ -9947,5 +9961,5 @@
     <migrationList entityName="Migration" entityComments="" entityAuthor="" entityCreationTime="1366377875905" model="/0"/>
     <multiphysicsCouplingsList entityName="Multiphysics Couplings" entityComments="" entityAuthor="" entityCreationTime="1465297899171" model="/0"/>
   </com.comsol.mphdev-v5:Design>
-  <com.comsol.guimph-v1:DesignGuiModel guiView="POST" currentNode="//@physicsInterfaceList/@features[key='phys1']/@value/@feature/@features[key='domfeat2']/@value/@feature/@features[key='def2']/@value" currentBuilderPhysics="phys1"/>
+  <com.comsol.guimph-v1:DesignGuiModel guiView="POST" currentNode="//@physicsInterfaceList/@features[key='phys1']/@value/@feature/@features[key='doc1']/@value/@feature/@features[key='par1']/@value" currentBuilderPhysics="phys1"/>
 </xmi:XMI>
