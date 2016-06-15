@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.comsol.guimph-v1="http://www.comsol.com/guimph/v1" xmlns:com.comsol.mph-v15="http://www.comsol.com/mph/v15" xmlns:com.comsol.mphdev-v5="http://www.comsol.com/mphdev/v5">
-  <com.comsol.mphdev-v5:Design tag="Build1" entityName="KamalSourour.mphphb" entityComments="" entityAuthor="" entityCreationTime="1465975001265" entityModifyTime="1366380904654" savedInVersion="35" comsolVersion="COMSOL 4.3b (Build: 145)" baseSystem="SI" srl="">
+  <com.comsol.mphdev-v5:Design tag="Build3" entityName="KamalSourour.mphphb" entityComments="" entityAuthor="" entityCreationTime="1465975001265" entityModifyTime="1366380904654" savedInVersion="35" comsolVersion="COMSOL 4.3b (Build: 145)" baseSystem="SI" srl="8074759">
     <entityFlags>nodeactivate</entityFlags>
     <entityFlags>noremove</entityFlags>
     <result entityName="Results" entityComments="" entityAuthor="" entityCreationTime="1366377875653" autoPlot="false">
@@ -135,7 +135,7 @@
     </result>
     <physicsInterfaceList entityName="List" entityComments="" entityAuthor="" entityCreationTime="1366377875767" entityModifyTime="1366377897716" entityModifiedBy="" model="/0">
       <features key="phys1">
-        <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="phys1" entityName="Physics Interface 1" entityComments="" entityAuthor="" entityCreationTime="1366377897934" entityModifyTime="1465975026667" entityModifiedBy="" operationID="PhysicsInterface">
+        <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="phys1" entityName="Physics Interface 1" entityComments="" entityAuthor="" entityCreationTime="1366377897934" entityModifyTime="1465985126336" entityModifiedBy="" operationID="PhysicsInterface">
           <properties key="type">
             <value tag="type" value="CureKinetics"/>
           </properties>
@@ -152,7 +152,7 @@
             <value tag="icon" value="physics.png"/>
           </properties>
           <properties key="physicsArea">
-            <value tag="physicsArea" value="uncategorized"/>
+            <value tag="physicsArea" value="Kinetics"/>
           </properties>
           <properties key="spaceDimensionSelection">
             <value tag="spaceDimensionSelection" valueArray="1|6,'THREED','TWOD','AXI2D','ONED','AXI1D','ZEROD'"/>
@@ -8776,13 +8776,13 @@
     <physicsMakerList entityName="Components" entityComments="" entityAuthor="" entityCreationTime="1366377875888" entityModifyTime="1465389012862" entityModifiedBy="" model="/0"/>
     <physicsAreaList entityName="Physics Areas" entityComments="" entityAuthor="" entityCreationTime="1366377875900" entityModifyTime="1465477520692" entityModifiedBy="" model="/0">
       <features key="phar1">
-        <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="phar1" entityName="Physics Area 1" entityComments="" entityAuthor="" entityCreationTime="1465469815903" entityModifyTime="1465469869667" entityModifiedBy="" operationID="PhysicsArea">
+        <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="phar1" entityName="Physics Area 1" entityComments="" entityAuthor="" entityCreationTime="1465469815903" entityModifyTime="1465985117765" entityModifiedBy="" operationID="PhysicsArea">
           <entityFlags>nodeactivate</entityFlags>
           <properties key="name">
-            <value tag="name" value="CrystallizationKinetics"/>
+            <value tag="name" value="Kinetics"/>
           </properties>
           <properties key="description">
-            <value tag="description" value="Crystallization Kinetics"/>
+            <value tag="description" value="Kinetics (Arthur)"/>
           </properties>
           <properties key="descriptionLocalized">
             <value tag="descriptionLocalized" value=""/>
@@ -9468,5 +9468,5 @@
     <migrationList entityName="Migration" entityComments="" entityAuthor="" entityCreationTime="1366377875905" model="/0"/>
     <multiphysicsCouplingsList entityName="Multiphysics Couplings" entityComments="" entityAuthor="" entityCreationTime="1465297899171" model="/0"/>
   </com.comsol.mphdev-v5:Design>
-  <com.comsol.guimph-v1:DesignGuiModel guiView="POST" currentNode="//@migrationList" currentBuilderPhysics="phys1"/>
+  <com.comsol.guimph-v1:DesignGuiModel guiView="POST" currentNode="//@physicsInterfaceList/@features[key='phys1']/@value" currentBuilderPhysics="phys1"/>
 </xmi:XMI>
