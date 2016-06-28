@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.comsol.guimph-v1="http://www.comsol.com/guimph/v1" xmlns:com.comsol.mph-v15="http://www.comsol.com/mph/v15" xmlns:com.comsol.mphdev-v5="http://www.comsol.com/mphdev/v5">
-  <com.comsol.mphdev-v5:Design tag="Build3" entityName="KamalSourour.mphphb" entityComments="" entityAuthor="" entityCreationTime="1465975001265" entityModifyTime="1366380904654" savedInVersion="35" comsolVersion="COMSOL 4.3b (Build: 145)" baseSystem="SI" srl="8074759">
+  <com.comsol.mphdev-v5:Design tag="Build1" entityName="KamalSourour.mphphb" entityComments="" entityAuthor="" entityCreationTime="1465975001265" entityModifyTime="1366380904654" savedInVersion="35" comsolVersion="COMSOL 4.3b (Build: 145)" baseSystem="SI" srl="8074759">
     <entityFlags>nodeactivate</entityFlags>
     <entityFlags>noremove</entityFlags>
     <result entityName="Results" entityComments="" entityAuthor="" entityCreationTime="1366377875653" autoPlot="false">
@@ -3661,7 +3661,7 @@
                 <properties key="visibilityConstraint">
                   <value tag="visibilityConstraint" value="HIDDEN"/>
                 </properties>
-                <feature xsi:type="com.comsol.mphdev-v5:DesignEntityList" entityComments="" entityAuthor="" entityModifyTime="1465466646515" entityModifiedBy="" model="/0">
+                <feature xsi:type="com.comsol.mphdev-v5:DesignEntityList" entityComments="" entityAuthor="" entityModifyTime="1467117194161" entityModifiedBy="" model="/0">
                   <features key="com1">
                     <value xsi:type="com.comsol.mph-v15:ReportFeature" tag="com1" entityName="Developer Comments" entityComments="" entityAuthor="" entityCreationTime="1465463050101" operationID="Comment" status="edited">
                       <properties key="text">
@@ -3774,12 +3774,12 @@
                           </value>
                         </features>
                         <features key="def1">
-                          <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="def1" entityName="Variable Definition 1" entityComments="" entityAuthor="" entityCreationTime="1465463050111" entityModifyTime="1465462911645" entityModifiedBy="" operationID="VariableSubDefinition">
+                          <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="def1" entityName="Variable Definition 1" entityComments="" entityAuthor="" entityCreationTime="1465463050111" entityModifyTime="1467117191009" entityModifiedBy="" operationID="VariableSubDefinition">
                             <properties key="definitionType">
                               <value tag="definitionType" value="expression"/>
                             </properties>
                             <properties key="expression">
-                              <value tag="expression" value="alphat * rho_m * v_f"/>
+                              <value tag="expression" value="alphat * rho_m * v_f *H"/>
                             </properties>
                             <properties key="shapeFunction">
                               <value tag="shapeFunction" value="shlag"/>
@@ -4681,6 +4681,384 @@
                               <value tag="text" value="[[&lt;l>&lt;ref entity=&quot;doc.entity&quot;>&lt;/l> needs some developer comments for maintainability.]]"/>
                             </properties>
                             <feature xsi:type="com.comsol.mph-v15:ReportFeatureList" model="/0"/>
+                          </value>
+                        </features>
+                      </feature>
+                    </value>
+                  </features>
+                  <features key="par11">
+                    <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="par11" entityName="Material Property 11" entityComments="" entityAuthor="" entityCreationTime="1467117194163" entityModifyTime="1467117214432" entityModifiedBy="" operationID="MaterialParameter">
+                      <properties key="materialDeclaration">
+                        <value tag="materialDeclaration" value="local"/>
+                      </properties>
+                      <properties key="name">
+                        <value tag="name" value="H"/>
+                      </properties>
+                      <properties key="description">
+                        <value tag="description" value="Description"/>
+                      </properties>
+                      <properties key="descriptionLocalized">
+                        <value tag="descriptionLocalized" value=""/>
+                      </properties>
+                      <properties key="symbol">
+                        <value tag="symbol" value=""/>
+                      </properties>
+                      <properties key="parameterName">
+                        <value tag="parameterName" value="H"/>
+                      </properties>
+                      <properties key="quantity">
+                        <value tag="quantity" value="absorption"/>
+                      </properties>
+                      <properties key="localQuantityLink">
+                        <value tag="localQuantityLink" value="none" referenceContainerList="/0/@materialGroupList" compositeIndex="0"/>
+                      </properties>
+                      <properties key="urlq">
+                        <value tag="urlq" referenceContainerList="/0/@includeList"/>
+                      </properties>
+                      <properties key="importedQuantityLink">
+                        <value tag="importedQuantityLink" value="none"/>
+                      </properties>
+                      <properties key="size">
+                        <value tag="size" value="scalar"/>
+                      </properties>
+                      <properties key="defaultScalarValue">
+                        <value tag="defaultScalarValue" value="120"/>
+                      </properties>
+                      <properties key="defaultVectorValue">
+                        <value tag="defaultVectorValue" valueArray="1|3,'0','0','0'"/>
+                      </properties>
+                      <properties key="defaultMatrixValue">
+                        <value tag="defaultMatrixValue" valueArray="3|3,'1','0','0'|3,'0','1','0'|3,'0','0','1'"/>
+                      </properties>
+                      <properties key="customSize">
+                        <value tag="customSize" value="1x1"/>
+                      </properties>
+                      <properties key="hiddenColumns">
+                        <value tag="hiddenColumns" value="c1"/>
+                      </properties>
+                      <properties key="customDefault1">
+                        <value tag="customDefault1" valueArray="1|1,'0'"/>
+                      </properties>
+                      <properties key="customDefault2">
+                        <value tag="customDefault2" valueArray="0"/>
+                      </properties>
+                      <properties key="customDefault3">
+                        <value tag="customDefault3" valueArray="0"/>
+                      </properties>
+                      <properties key="customDefault4">
+                        <value tag="customDefault4" valueArray="0"/>
+                      </properties>
+                      <properties key="customDefault5">
+                        <value tag="customDefault5" valueArray="0"/>
+                      </properties>
+                      <properties key="customDefault6">
+                        <value tag="customDefault6" valueArray="0"/>
+                      </properties>
+                      <properties key="defaultCustomValue">
+                        <value tag="defaultCustomValue" value="{0}"/>
+                      </properties>
+                      <properties key="nameactive">
+                        <value tag="nameactive" value="off"/>
+                      </properties>
+                      <properties key="materialGroup">
+                        <value tag="materialGroup" value="PoroacousticsModel"/>
+                      </properties>
+                      <properties key="materialParameter">
+                        <value tag="materialParameter" value="K_eq"/>
+                      </properties>
+                      <properties key="hidden_size">
+                        <value tag="hidden_size" value="scalar"/>
+                      </properties>
+                      <properties key="materialGroupLocal">
+                        <value tag="materialGroupLocal" reference="/0/@materialGroupList/@features[key='mat1']/@value" referenceContainerList="/0/@materialGroupList"/>
+                      </properties>
+                      <properties key="materialParameterLocal">
+                        <value tag="materialParameterLocal" value="none" reference="/0/@materialGroupList/@features[key='mat1']/@value/@feature/@features[key='par1']/@value" referenceContainerList="/0/@materialGroupList/@features[key='mat1']/@value/@feature" compositeIndex="0"/>
+                      </properties>
+                      <properties key="url">
+                        <value tag="url" referenceContainerList="/0/@includeList"/>
+                      </properties>
+                      <properties key="importedLink">
+                        <value tag="importedLink" value="none"/>
+                      </properties>
+                      <properties key="materialParameterExternal">
+                        <value tag="materialParameterExternal" value="none"/>
+                      </properties>
+                      <properties key="defaultSelectableValue">
+                        <value tag="defaultSelectableValue" value="fromMaterial"/>
+                      </properties>
+                      <properties key="customDefault">
+                        <value tag="customDefault" value="from_mat"/>
+                      </properties>
+                      <properties key="addMaterialList">
+                        <value tag="addMaterialList" value="off"/>
+                      </properties>
+                      <properties key="coupledToMaterialList">
+                        <value tag="coupledToMaterialList" value="matListRefByName" referenceContainerList="/0/@physicsInterfaceList/@features[key='phys1']/@value/@feature/@features[key='domfeat4']/@value/@feature" compositeIndex="0"/>
+                      </properties>
+                      <properties key="inputName">
+                        <value tag="inputName" value="on"/>
+                      </properties>
+                      <properties key="listName">
+                        <value tag="listName" value=""/>
+                      </properties>
+                      <properties key="takeValuesFromPropertyGroups">
+                        <value tag="takeValuesFromPropertyGroups" value="off"/>
+                      </properties>
+                      <properties key="extraItems">
+                        <value tag="extraItems" valueArray="0"/>
+                      </properties>
+                      <properties key="extraItemsLocalized">
+                        <value tag="extraItemsLocalized" valueArray="1|0"/>
+                      </properties>
+                      <properties key="match">
+                        <value tag="match" value="disable"/>
+                      </properties>
+                      <properties key="announceTag">
+                        <value tag="announceTag" value=""/>
+                      </properties>
+                      <properties key="syncronizedQuantity">
+                        <value tag="syncronizedQuantity" value="absorbeddose"/>
+                      </properties>
+                      <properties key="localQuantityLink_synchronized">
+                        <value tag="localQuantityLink_synchronized" value="none" reference="/0/@materialGroupList/@features[key='pq1']/@value" referenceContainerList="/0/@materialGroupList" compositeIndex="0"/>
+                      </properties>
+                      <properties key="urlq_synchronized">
+                        <value tag="urlq_synchronized" referenceContainerList="/0/@includeList"/>
+                      </properties>
+                      <properties key="importedQuantityLink_synchronized">
+                        <value tag="importedQuantityLink_synchronized" value="none"/>
+                      </properties>
+                      <properties key="direction">
+                        <value tag="direction" value="bidirectional"/>
+                      </properties>
+                      <properties key="spaceDimensions">
+                        <value tag="spaceDimensions" value="fromInterface"/>
+                      </properties>
+                      <properties key="spaceDimensionSelection">
+                        <value tag="spaceDimensionSelection" valueArray="1|5,'THREED','TWOD','AXI2D','ONED','AXI1D'"/>
+                      </properties>
+                      <properties key="hideWhenInactivated">
+                        <value tag="hideWhenInactivated" value="off"/>
+                      </properties>
+                      <properties key="annotationHiddenGroup">
+                        <value tag="annotationHiddenGroup" value="edit"/>
+                      </properties>
+                      <properties key="annotationNoDescr">
+                        <value tag="annotationNoDescr" value="off"/>
+                      </properties>
+                      <properties key="annotationNoSymbol">
+                        <value tag="annotationNoSymbol" value="off"/>
+                      </properties>
+                      <properties key="annotationNoCoordLabels">
+                        <value tag="annotationNoCoordLabels" value="off"/>
+                      </properties>
+                      <properties key="annotationVectorComps">
+                        <value tag="annotationVectorComps" value="inPlane"/>
+                      </properties>
+                      <properties key="annotationCompsPropertyName">
+                        <value tag="annotationCompsPropertyName" value=""/>
+                      </properties>
+                      <properties key="annotationCompsParamName">
+                        <value tag="annotationCompsParamName" value=""/>
+                      </properties>
+                      <properties key="annotationVectorCompsPropertyValue">
+                        <value tag="annotationVectorCompsPropertyValue" valueArray="1|0"/>
+                      </properties>
+                      <properties key="annotationVectorCompsProperty">
+                        <value tag="annotationVectorCompsProperty" valueArray="1|1,'inPlane'"/>
+                      </properties>
+                      <properties key="annotationMatrixComps">
+                        <value tag="annotationMatrixComps" value="inPlane"/>
+                      </properties>
+                      <properties key="annotationMatrixCompsPropertyValue">
+                        <value tag="annotationMatrixCompsPropertyValue" valueArray="1|0"/>
+                      </properties>
+                      <properties key="annotationMatrixCompsProperty">
+                        <value tag="annotationMatrixCompsProperty" valueArray="1|1,'inPlane'"/>
+                      </properties>
+                      <properties key="annotationMatrixSymmetry">
+                        <value tag="annotationMatrixSymmetry" value="anisotropic"/>
+                      </properties>
+                      <properties key="annotationDividerTextLocalized">
+                        <value tag="annotationDividerTextLocalized" value=""/>
+                      </properties>
+                      <properties key="annotationAddDivider">
+                        <value tag="annotationAddDivider" value="off"/>
+                      </properties>
+                      <properties key="annotationDividerText">
+                        <value tag="annotationDividerText" value=""/>
+                      </properties>
+                      <feature xsi:type="com.comsol.mphdev-v5:DesignEntityList" model="/0">
+                        <features key="com1">
+                          <value xsi:type="com.comsol.mph-v15:ReportFeature" tag="com1" entityName="Developer Comments" entityComments="" entityAuthor="" entityCreationTime="1467117194171" operationID="Comment" status="built">
+                            <properties key="text">
+                              <value tag="text" value="[[&lt;l>&lt;ref entity=&quot;doc.entity&quot;>&lt;/l> needs some developer comments for maintainability.]]"/>
+                            </properties>
+                            <feature xsi:type="com.comsol.mph-v15:ReportFeatureList" model="/0"/>
+                          </value>
+                        </features>
+                        <features key="par1">
+                          <value xsi:type="com.comsol.mph-v15:ReportFeature" tag="par1" entityName="User Documentation" entityComments="" entityAuthor="" entityCreationTime="1467117194171" operationID="Text" status="built">
+                            <properties key="text">
+                              <value tag="text" value="[[&lt;l>&lt;ref entity=&quot;doc.entity&quot;>&lt;/l> needs better user documentation.]]"/>
+                            </properties>
+                            <feature xsi:type="com.comsol.mph-v15:ReportFeatureList" model="/0"/>
+                          </value>
+                        </features>
+                        <features key="def1">
+                          <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="def1" entityName="Variable Definition 1" entityComments="" entityAuthor="" entityCreationTime="1467117194174" entityModifyTime="1467117209046" entityModifiedBy="" operationID="InputSubDefinition">
+                            <properties key="name">
+                              <value tag="name" value="H"/>
+                            </properties>
+                            <properties key="definitionType">
+                              <value tag="definitionType" value="expression"/>
+                            </properties>
+                            <properties key="expression">
+                              <value tag="expression" value="par.H"/>
+                            </properties>
+                            <properties key="shapeFunction">
+                              <value tag="shapeFunction" value="shlag"/>
+                            </properties>
+                            <properties key="shapeOrder">
+                              <value tag="shapeOrder" value="auto"/>
+                            </properties>
+                            <properties key="customShapeOrder">
+                              <value tag="customShapeOrder" value="2"/>
+                            </properties>
+                            <properties key="selection">
+                              <value tag="selection" value="inherit"/>
+                            </properties>
+                            <properties key="outSelection">
+                              <value tag="outSelection" value="selected"/>
+                            </properties>
+                            <properties key="adjBoundaries">
+                              <value tag="adjBoundaries" value="all"/>
+                            </properties>
+                            <properties key="adjEdges">
+                              <value tag="adjEdges" value="all"/>
+                            </properties>
+                            <properties key="adjPoints">
+                              <value tag="adjPoints" value="all"/>
+                            </properties>
+                            <properties key="domainType">
+                              <value tag="domainType" valueArray="1|2,'exterior','interior'"/>
+                            </properties>
+                            <properties key="materialType">
+                              <value tag="materialType" value="material"/>
+                            </properties>
+                            <properties key="seletionOperation">
+                              <value tag="seletionOperation" value="union"/>
+                            </properties>
+                            <properties key="inputSelection">
+                              <value tag="inputSelection" valueArray="1|0"/>
+                            </properties>
+                            <properties key="inputSelectionDiff">
+                              <value tag="inputSelectionDiff" valueArray="1|0"/>
+                            </properties>
+                            <properties key="selectionComponent">
+                              <value tag="selectionComponent" referenceContainerList="/0/@physicsMakerList"/>
+                            </properties>
+                            <properties key="featureSeletionOperation">
+                              <value tag="featureSeletionOperation" value="union"/>
+                            </properties>
+                            <properties key="inputFeatureSelection">
+                              <value tag="inputFeatureSelection" valueArray="1|0"/>
+                            </properties>
+                            <properties key="inputFeatureSelectionDiff">
+                              <value tag="inputFeatureSelectionDiff" valueArray="1|0"/>
+                            </properties>
+                            <properties key="rhs">
+                              <value tag="rhs" value="off"/>
+                            </properties>
+                            <properties key="forceLoadGroup">
+                              <value tag="forceLoadGroup" value="off"/>
+                            </properties>
+                            <properties key="plot">
+                              <value tag="plot" value="on"/>
+                            </properties>
+                            <properties key="category">
+                              <value tag="category" value=""/>
+                            </properties>
+                            <properties key="announce">
+                              <value tag="announce" value="off"/>
+                            </properties>
+                            <properties key="announceTag">
+                              <value tag="announceTag" value=""/>
+                            </properties>
+                            <properties key="doZeroOut">
+                              <value tag="doZeroOut" value="off"/>
+                            </properties>
+                            <properties key="zeroOut">
+                              <value tag="zeroOut" value="zeroOutOfPlane"/>
+                            </properties>
+                            <properties key="zeroOutPropertyName">
+                              <value tag="zeroOutPropertyName" value=""/>
+                            </properties>
+                            <properties key="zeroOutParamName">
+                              <value tag="zeroOutParamName" value=""/>
+                            </properties>
+                            <properties key="zeroOutPropertyValue">
+                              <value tag="zeroOutPropertyValue" valueArray="1|0"/>
+                            </properties>
+                            <properties key="zeroOutProperty">
+                              <value tag="zeroOutProperty" valueArray="1|1,'zeroOutOfPlane'"/>
+                            </properties>
+                            <properties key="zeroOutOtherPropertyValue">
+                              <value tag="zeroOutOtherPropertyValue" value="keepAllComponents"/>
+                            </properties>
+                            <properties key="zeroOutPropertyUndefined">
+                              <value tag="zeroOutPropertyUndefined" value="off"/>
+                            </properties>
+                            <properties key="hide">
+                              <value tag="hide" value="off"/>
+                            </properties>
+                            <properties key="encrypt">
+                              <value tag="encrypt" value="off"/>
+                            </properties>
+                            <properties key="baseVector">
+                              <value tag="baseVector" value="global"/>
+                            </properties>
+                            <properties key="densityType">
+                              <value tag="densityType" value="normal"/>
+                            </properties>
+                            <properties key="use_baseVectorType">
+                              <value tag="use_baseVectorType" value="off"/>
+                            </properties>
+                            <properties key="labelsReadOnly">
+                              <value tag="labelsReadOnly" valueArray="1|1,'1st'"/>
+                            </properties>
+                            <properties key="indexBaseVector">
+                              <value tag="indexBaseVector" valueArray="1|1,'global'"/>
+                            </properties>
+                            <properties key="baseVectorType">
+                              <value tag="baseVectorType" valueArray="1|1,'contravariant'"/>
+                            </properties>
+                            <properties key="allFrames">
+                              <value tag="allFrames" value="off"/>
+                            </properties>
+                            <properties key="depVarType">
+                              <value tag="depVarType" value="normal"/>
+                            </properties>
+                            <properties key="associateWithOtherShape">
+                              <value tag="associateWithOtherShape" value="off"/>
+                            </properties>
+                            <properties key="associatedStates">
+                              <value tag="associatedStates" valueArray="1|0"/>
+                            </properties>
+                            <properties key="realValueType">
+                              <value tag="realValueType" value="complex"/>
+                            </properties>
+                            <feature xsi:type="com.comsol.mphdev-v5:DesignEntityList" model="/0">
+                              <features key="com1">
+                                <value xsi:type="com.comsol.mph-v15:ReportFeature" tag="com1" entityName="Developer Comments" entityComments="" entityAuthor="" entityCreationTime="1467117194180" operationID="Comment" status="built">
+                                  <properties key="text">
+                                    <value tag="text" value="[[&lt;l>&lt;ref entity=&quot;doc.entity&quot;>&lt;/l> needs some developer comments for maintainability.]]"/>
+                                  </properties>
+                                  <feature xsi:type="com.comsol.mph-v15:ReportFeatureList" model="/0"/>
+                                </value>
+                              </features>
+                            </feature>
                           </value>
                         </features>
                       </feature>
@@ -9468,5 +9846,5 @@
     <migrationList entityName="Migration" entityComments="" entityAuthor="" entityCreationTime="1366377875905" model="/0"/>
     <multiphysicsCouplingsList entityName="Multiphysics Couplings" entityComments="" entityAuthor="" entityCreationTime="1465297899171" model="/0"/>
   </com.comsol.mphdev-v5:Design>
-  <com.comsol.guimph-v1:DesignGuiModel guiView="POST" currentNode="//@physicsInterfaceList/@features[key='phys1']/@value" currentBuilderPhysics="phys1"/>
+  <com.comsol.guimph-v1:DesignGuiModel guiView="POST" currentNode="//@physicsInterfaceList/@features[key='phys1']/@value/@feature/@features[key='domfeat4']/@value/@feature/@features[key='var2']/@value/@feature/@features[key='def1']/@value" currentBuilderPhysics="phys1"/>
 </xmi:XMI>
