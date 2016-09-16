@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.comsol.guimph-v1="http://www.comsol.com/guimph/v1" xmlns:com.comsol.mph-v15="http://www.comsol.com/mph/v15" xmlns:com.comsol.mphdev-v5="http://www.comsol.com/mphdev/v5">
-  <com.comsol.mphdev-v5:Design tag="Build1" entityName="CrystallizationKinetics.mphphb" entityComments="" entityAuthor="" entityCreationTime="1465297945494" entityModifyTime="1366380904654" savedInVersion="35" comsolVersion="COMSOL 4.3b (Build: 145)" baseSystem="SI" srl="8074759">
+  <com.comsol.mphdev-v5:Design tag="Build1" entityName="CrystallizationKinetics.mphphb" entityComments="" entityAuthor="" entityCreationTime="1465297945494" entityModifyTime="1366380904654" savedInVersion="35" comsolVersion="COMSOL 4.3b (Build: 145)" baseSystem="SI" srl="1024284">
     <entityFlags>nodeactivate</entityFlags>
     <entityFlags>noremove</entityFlags>
     <result entityName="Results" entityComments="" entityAuthor="" entityCreationTime="1366377875653" autoPlot="false">
@@ -4504,12 +4504,12 @@
                           </value>
                         </features>
                         <features key="def1">
-                          <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="def1" entityName="Variable Definition 1" entityComments="" entityAuthor="" entityCreationTime="1465463050111" entityModifyTime="1467116972581" entityModifiedBy="" operationID="VariableSubDefinition">
+                          <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="def1" entityName="Variable Definition 1" entityComments="" entityAuthor="" entityCreationTime="1465463050111" entityModifyTime="1473234835226" entityModifiedBy="" operationID="VariableSubDefinition">
                             <properties key="definitionType">
                               <value tag="definitionType" value="expression"/>
                             </properties>
                             <properties key="expression">
-                              <value tag="expression" value="alphat * rho_m * v_f * H"/>
+                              <value tag="expression" value="alphat * rho_m * (1-v_f) * H"/>
                             </properties>
                             <properties key="shapeFunction">
                               <value tag="shapeFunction" value="shlag"/>
@@ -10555,5 +10555,5 @@
     <migrationList entityName="Migration" entityComments="" entityAuthor="" entityCreationTime="1366377875905" model="/0"/>
     <multiphysicsCouplingsList entityName="Multiphysics Couplings" entityComments="" entityAuthor="" entityCreationTime="1465297899171" model="/0"/>
   </com.comsol.mphdev-v5:Design>
-  <com.comsol.guimph-v1:DesignGuiModel guiView="POST" currentNode="//@physicsInterfaceList/@features[key='phys1']/@value/@feature/@features[key='domfeat4']/@value/@feature/@features[key='var2']/@value/@feature/@features[key='def1']/@value" currentBuilderPhysics="phys1"/>
+  <com.comsol.guimph-v1:DesignGuiModel currentNode="//@physicsInterfaceList/@features[key='phys1']/@value/@feature/@features[key='domfeat4']/@value/@feature/@features[key='var2']/@value/@feature/@features[key='def1']/@value" currentBuilderPhysics="phys1"/>
 </xmi:XMI>
