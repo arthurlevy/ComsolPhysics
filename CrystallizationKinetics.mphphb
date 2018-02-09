@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.comsol.guimph-v1="http://www.comsol.com/guimph/v1" xmlns:com.comsol.mph-v15="http://www.comsol.com/mph/v15" xmlns:com.comsol.mphdev-v5="http://www.comsol.com/mphdev/v5">
-  <com.comsol.mphdev-v5:Design tag="Build1" entityName="CrystallizationKinetics.mphphb" entityComments="" entityAuthor="" entityCreationTime="1465297945494" entityModifyTime="1366380904654" savedInVersion="35" comsolVersion="COMSOL 4.3b (Build: 145)" baseSystem="SI" srl="1024284">
+  <com.comsol.mphdev-v5:Design tag="Build2" entityName="CrystallizationKinetics.mphphb" entityComments="" entityAuthor="" entityCreationTime="1465297945494" entityModifyTime="1366380904654" savedInVersion="35" comsolVersion="COMSOL 4.3b (Build: 145)" baseSystem="SI" srl="1024284">
     <entityFlags>nodeactivate</entityFlags>
     <entityFlags>noremove</entityFlags>
     <result entityName="Results" entityComments="" entityAuthor="" entityCreationTime="1366377875653" autoPlot="false">
@@ -4418,7 +4418,7 @@
                     </value>
                   </features>
                   <features key="var2">
-                    <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="var2" entityName="exotherm declaration" entityComments="" entityAuthor="" entityCreationTime="1465463050105" entityModifyTime="1465398582140" entityModifiedBy="" operationID="Variable">
+                    <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="var2" entityName="exotherm declaration" entityComments="" entityAuthor="" entityCreationTime="1465463050105" entityModifyTime="1481195435405" entityModifiedBy="" operationID="Variable">
                       <properties key="name">
                         <value tag="name" value="exotherm"/>
                       </properties>
@@ -4471,7 +4471,7 @@
                         <value tag="category" value=""/>
                       </properties>
                       <properties key="announce">
-                        <value tag="announce" value="off"/>
+                        <value tag="announce" value="on"/>
                       </properties>
                       <properties key="announceTag">
                         <value tag="announceTag" value=""/>
@@ -5382,7 +5382,7 @@
                     </value>
                   </features>
                   <features key="eqd1">
-                    <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="eqd1" entityName="Equation Display 1" entityComments="" entityAuthor="" entityCreationTime="1465466646516" entityModifyTime="1465466710587" entityModifiedBy="" operationID="EquationDisplay">
+                    <value xsi:type="com.comsol.mphdev-v5:DesignEntity" tag="eqd1" entityName="Equation Display 1" entityComments="" entityAuthor="" entityCreationTime="1465466646516" entityModifyTime="1518188210148" entityModifiedBy="" operationID="EquationDisplay">
                       <properties key="useEquationName">
                         <value tag="useEquationName" value="off"/>
                       </properties>
@@ -5390,10 +5390,10 @@
                         <value tag="name" value="eqd1"/>
                       </properties>
                       <properties key="equationString">
-                        <value tag="equationString" value="L = H \times v_f \times \rho_m \times \frac{d \alpha}{dt}"/>
+                        <value tag="equationString" value="L = H \times \left(1-v_f\right) \times \rho_m \times \frac{d \alpha}{dt}"/>
                       </properties>
                       <properties key="equationDisp">
-                        <value tag="equationDisp" value="\[L = H \times v_f \times \rho_m \times \frac{d \alpha}{dt}\]"/>
+                        <value tag="equationDisp" value="\[L = H \times \left(1-v_f\right) \times \rho_m \times \frac{d \alpha}{dt}\]"/>
                       </properties>
                       <properties key="includeImageEq">
                         <value tag="includeImageEq" value="off"/>
@@ -10555,5 +10555,5 @@
     <migrationList entityName="Migration" entityComments="" entityAuthor="" entityCreationTime="1366377875905" model="/0"/>
     <multiphysicsCouplingsList entityName="Multiphysics Couplings" entityComments="" entityAuthor="" entityCreationTime="1465297899171" model="/0"/>
   </com.comsol.mphdev-v5:Design>
-  <com.comsol.guimph-v1:DesignGuiModel currentNode="//@physicsInterfaceList/@features[key='phys1']/@value/@feature/@features[key='domfeat4']/@value/@feature/@features[key='var2']/@value/@feature/@features[key='def1']/@value" currentBuilderPhysics="phys1"/>
+  <com.comsol.guimph-v1:DesignGuiModel currentNode="//@physicsInterfaceList/@features[key='phys1']/@value/@feature/@features[key='domfeat4']/@value/@feature/@features[key='eqd1']/@value" currentBuilderPhysics="phys1"/>
 </xmi:XMI>
